@@ -2,8 +2,8 @@ library(rstan)
 library(dplyr)
 library(tidyverse)
 ideo<-read.csv("../affirmWIdeology.csv")
-multinom_ideo<-read.csv("../ideologyMultinomial.csv")[1:500,]
-popn_ps<-read.csv("../ps_wUSR.csv")[1:500,]
+multinom_ideo<-read.csv("../ideologyMultinomial.csv")
+popn_ps<-read.csv("../ps_wUSR.csv")
 popn_ps[,c(2:7,9)]<-popn_ps[,c(2:7,9)]+1
 
 data_ls <- list(
